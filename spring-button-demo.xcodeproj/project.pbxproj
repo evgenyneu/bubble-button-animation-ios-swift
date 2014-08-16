@@ -12,6 +12,9 @@
 		2B5E7281199F474100779AC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E727F199F474100779AC2 /* Main.storyboard */; };
 		2B5E7283199F474100779AC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E7282199F474100779AC2 /* Images.xcassets */; };
 		2B5E728F199F474100779AC2 /* spring_button_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5E728E199F474100779AC2 /* spring_button_demoTests.swift */; };
+		2B5E7299199F475900779AC2 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E7298199F475900779AC2 /* play@2x.png */; };
+		2B5E729B199F479500779AC2 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E729A199F479500779AC2 /* play.png */; };
+		2B5E729D199F4C2B00779AC2 /* bubble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E729C199F4C2B00779AC2 /* bubble.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		2B5E7288199F474100779AC2 /* spring-button-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spring-button-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5E728D199F474100779AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B5E728E199F474100779AC2 /* spring_button_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spring_button_demoTests.swift; sourceTree = "<group>"; };
+		2B5E7298199F475900779AC2 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		2B5E729A199F479500779AC2 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		2B5E729C199F4C2B00779AC2 /* bubble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubble.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 		2B5E7278199F474100779AC2 /* spring-button-demo */ = {
 			isa = PBXGroup;
 			children = (
+				2B5E729C199F4C2B00779AC2 /* bubble.mp3 */,
+				2B5E729A199F479500779AC2 /* play.png */,
+				2B5E7298199F475900779AC2 /* play@2x.png */,
 				2B5E727B199F474100779AC2 /* AppDelegate.swift */,
 				2B5E727D199F474100779AC2 /* ViewController.swift */,
 				2B5E727F199F474100779AC2 /* Main.storyboard */,
@@ -190,7 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5E7281199F474100779AC2 /* Main.storyboard in Resources */,
+				2B5E729B199F479500779AC2 /* play.png in Resources */,
+				2B5E729D199F4C2B00779AC2 /* bubble.mp3 in Resources */,
 				2B5E7283199F474100779AC2 /* Images.xcassets in Resources */,
+				2B5E7299199F475900779AC2 /* play@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -314,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "spring-button-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -339,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "spring-button-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
