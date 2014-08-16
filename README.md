@@ -22,4 +22,4 @@ Animation is done by setting `Scale` transform to the button inside animation bl
 
 ## Credit
 
-The Large Bubble Sound clip is taken from [soundbible.com](http://soundbible.com/1345-Large-Bubble.html) and recorded by **snottyboy**.
+The **Large Bubble Sound** clip is taken from [soundbible.com](http://soundbible.com/1345-Large-Bubble.html) and recorded by **snottyboy**.
