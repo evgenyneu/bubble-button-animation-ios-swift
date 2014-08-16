@@ -29,6 +29,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    setDefaults()
     bubbleSound = createBubbleSound()
     showButtonTapped(button)
   }
