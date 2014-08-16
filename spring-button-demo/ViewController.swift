@@ -22,9 +22,9 @@ class ViewController: UIViewController {
   @IBOutlet weak var durationLabel: UILabel!
   @IBOutlet weak var durationStepper: UIStepper!
 
-  let defaultDuration = 1.7
+  let defaultDuration = 2.0
   let defaultDamping = 0.20
-  let defaultVelocity = 2.4
+  let defaultVelocity = 6.0
 
   override func viewDidLoad() {
     super.viewDidLoad()

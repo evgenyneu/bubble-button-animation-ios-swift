@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9.9000000000000004" stepValue="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="U6f-Ta-fWj">
-                                <rect key="frame" x="161" y="86.5" width="94" height="29"/>
+                            <stepper contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9.9000000000000004" stepValue="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="U6f-Ta-fWj">
+                                <rect key="frame" x="162" y="88" width="94" height="29"/>
                                 <connections>
                                     <action selector="onDampingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="odL-P9-ODO"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ1-pO-yfE">
-                                <rect key="frame" x="111" y="91.5" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ1-pO-yfE">
+                                <rect key="frame" x="112" y="93" width="35" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="KW8-7I-WYt"/>
                                     <constraint firstAttribute="height" constant="21" id="sXL-eu-ast"/>
@@ -35,22 +35,22 @@
                                 <color key="shadowColor" red="0.41916769801980203" green="0.41916769801980203" blue="0.41916769801980203" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Damping:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc7-Vx-l1Z">
-                                <rect key="frame" x="30" y="90.5" width="74" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Damping:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc7-Vx-l1Z">
+                                <rect key="frame" x="30" y="91.5" width="75" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.98854736160000001" blue="0.45219169729999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.41916769801980203" green="0.41916769801980203" blue="0.41916769801980203" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <stepper contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9.9000000000000004" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="auv-7U-d9Q">
-                                <rect key="frame" x="161" y="46" width="94" height="29"/>
+                            <stepper contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9.9000000000000004" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="auv-7U-d9Q">
+                                <rect key="frame" x="162" y="46" width="94" height="29"/>
                                 <connections>
                                     <action selector="onDurationChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ja4-rP-B4q"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXK-4l-7D8">
-                                <rect key="frame" x="112" y="51" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXK-4l-7D8">
+                                <rect key="frame" x="113" y="51" width="35" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="60o-h9-DdA"/>
                                     <constraint firstAttribute="height" constant="21" id="b1R-R9-Xip"/>
@@ -61,19 +61,19 @@
                                 <color key="shadowColor" red="0.41916769801980203" green="0.41916769801980203" blue="0.41916769801980203" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Duration:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kl-ay-JSW">
-                                <rect key="frame" x="30" y="50" width="70" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kl-ay-JSW">
+                                <rect key="frame" x="30" y="50" width="71" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.98854736160000001" blue="0.45219169729999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.41916769801980203" green="0.41916769801980203" blue="0.41916769801980203" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K4-0S-j5f">
-                                <rect key="frame" x="111" y="131" width="40" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K4-0S-j5f">
+                                <rect key="frame" x="112" y="133.5" width="60" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="W5d-6A-jQi"/>
-                                    <constraint firstAttribute="width" constant="40" id="bUf-pq-5j8"/>
+                                    <constraint firstAttribute="width" constant="60" id="bUf-pq-5j8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.98854736160000001" blue="0.45219169729999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,16 +81,16 @@
                                 <color key="shadowColor" red="0.41916769801980203" green="0.41916769801980203" blue="0.41916769801980203" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Velocity:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsr-GN-2Dr">
-                                <rect key="frame" x="30" y="131" width="64.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocity:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsr-GN-2Dr">
+                                <rect key="frame" x="30" y="133" width="65.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.98854736160000001" blue="0.45219169729999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.41916769801980203" green="0.41916769801980203" blue="0.41916769801980203" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <stepper contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" stepValue="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="Z2X-Dh-hBv">
-                                <rect key="frame" x="161" y="127" width="94" height="29"/>
+                            <stepper contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Z2X-Dh-hBv">
+                                <rect key="frame" x="162" y="129.5" width="94" height="29"/>
                                 <connections>
                                     <action selector="onVelocityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hZT-Xj-Vhg"/>
                                 </connections>

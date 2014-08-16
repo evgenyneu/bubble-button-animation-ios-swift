@@ -6,10 +6,10 @@ Animation is done by setting `Scale` transform to the button inside animation bl
 
     button.transform = CGAffineTransformMakeScale(0.1, 0.1)
 
-    UIView.animateWithDuration(1.7,
+    UIView.animateWithDuration(2.0,
       delay: 0,
-      usingSpringWithDamping: 0.2,
-      initialSpringVelocity: 2.4,
+      usingSpringWithDamping: 0.20,
+      initialSpringVelocity: 6.00,
       options: UIViewAnimationOptions.AllowUserInteraction,
       animations: {
         self.button.transform = CGAffineTransformIdentity
