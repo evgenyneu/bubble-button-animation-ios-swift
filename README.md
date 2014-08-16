@@ -1,4 +1,4 @@
-# Overview
+# Bubble button animation demo iOS app
 
 A demo iOS app showning how to animate button and play sound.
 
