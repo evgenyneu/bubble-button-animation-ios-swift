@@ -1,6 +1,6 @@
 # Bubble button animation demo iOS app
 
-A demo iOS app showning how to animate button and play sound.
+This demo app shows how to apply spring style animation on a button.
 
 Animation is done by setting `Scale` transform to the button inside animation block. This demo app allows to tweak `duration`, `damping` and `velocity` parameters of the animation function.
 
