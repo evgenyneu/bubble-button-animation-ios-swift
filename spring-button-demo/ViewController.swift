@@ -23,7 +23,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var durationStepper: UIStepper!
 
   let defaultDuration = 2.0
-  let defaultDamping = 0.25
+  let defaultDamping = 0.30
   let defaultVelocity = 1.9
 
   override func viewDidLoad() {
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 
     setDefaults()
     bubbleSound = createBubbleSound()
-    showButtonTapped(button)
+    animateButton()
   }
 
   func setDefaults() {
@@ -47,11 +47,9 @@ class ViewController: UIViewController {
     onVelocityChanged(velocityStepper)
   }
 
-  @IBAction func showButtonTapped(sender: AnyObject) {
+  // ⬇︎⬇︎⬇︎ animation happens here ⬇︎⬇︎⬇︎
+  func animateButton() {
     AudioServicesPlaySystemSound(bubbleSound)
-
-    // ⬇︎⬇︎⬇︎ animation happens here ⬇︎⬇︎⬇︎
-
     button.transform = CGAffineTransformMakeScale(0.1, 0.1)
 
     UIView.animateWithDuration(durationStepper.value,
@@ -61,7 +59,20 @@ class ViewController: UIViewController {
       options: UIViewAnimationOptions.AllowUserInteraction,
       animations: {
         self.button.transform = CGAffineTransformMakeScale(1, 1)
-      }, completion: nil)
+      }, completion: { finished in
+
+
+      self.doAfterDelay(0.5) {
+        self.animateButton()
+      }
+    })
+  }
+
+  func doAfterDelay(delaySeconds: Double, callback: ()->()) {
+    let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delaySeconds * Double(NSEC_PER_SEC)))
+    dispatch_after(time, dispatch_get_main_queue()) {
+      callback();
+    }
   }
 
   func createBubbleSound() -> SystemSoundID {
