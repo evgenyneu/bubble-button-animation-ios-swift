@@ -22,7 +22,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var durationLabel: UILabel!
   @IBOutlet weak var durationStepper: UIStepper!
 
-  let defaultDuration = 1.0
+  let defaultDuration = 1.7
   let defaultDamping = 0.20
   let defaultVelocity = 2.4
 
@@ -58,21 +58,12 @@ class ViewController: UIViewController {
       initialSpringVelocity: CGFloat(velocityStepper.value),
       options: UIViewAnimationOptions.AllowUserInteraction,
       animations: {
-        self.button.transform = CGAffineTransformMakeScale(1, 1)
-      }, completion: { finished in
-
-
-      self.doAfterDelay(0.5) {
+        self.button.transform = CGAffineTransformIdentity
+      },
+      completion: { finished in
         self.animateButton()
       }
-    })
-  }
-
-  func doAfterDelay(delaySeconds: Double, callback: ()->()) {
-    let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delaySeconds * Double(NSEC_PER_SEC)))
-    dispatch_after(time, dispatch_get_main_queue()) {
-      callback();
-    }
+    )
   }
 
   func createBubbleSound() -> SystemSoundID {
