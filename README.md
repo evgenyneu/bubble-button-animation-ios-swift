@@ -20,3 +20,6 @@ Animation is done by setting `Scale` transform to the button inside animation bl
 <img src='https://raw.githubusercontent.com/evgenyneu/bubble-button-animation-ios-swift/master/images/screenshot.png' width='320' alt='iOS animate button demo with Swift'>
 
 
+## Credit
+
+The bubble sound clip taken from [soundbible.com](http://soundbible.com/1345-Large-Bubble.html) and recorded by **snottyboy**.
