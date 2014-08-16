@@ -28,6 +28,12 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    bubbleSound = createBubbleSound()
+    showButtonTapped(button)
+  }
+
+  func setDefaults() {
     dampingLabel.text = ""
 
     durationStepper.value = defaultDuration
@@ -38,15 +44,14 @@ class ViewController: UIViewController {
 
     velocityStepper.value = defaultVelocity
     onVelocityChanged(velocityStepper)
-
-    bubbleSound = createBubbleSound()
-
-    showButtonTapped(button)
   }
 
   @IBAction func showButtonTapped(sender: AnyObject) {
-    button.transform = CGAffineTransformMakeScale(0.1, 0.1)
     AudioServicesPlaySystemSound(bubbleSound)
+
+    // ⬇︎⬇︎⬇︎ animation happens here ⬇︎⬇︎⬇︎
+
+    button.transform = CGAffineTransformMakeScale(0.1, 0.1)
 
     UIView.animateWithDuration(durationStepper.value,
       delay: 0,
