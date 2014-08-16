@@ -2,7 +2,7 @@
 
 A demo iOS app showning how to animate button and play sound.
 
-Animation is done by setting `Scale` transform to the button in animatino block. 
+Animation is done by setting `Scale` transform to the button inside animation block. 
 
     button.transform = CGAffineTransformMakeScale(0.1, 0.1)
     
