@@ -15,6 +15,8 @@
 		2B5E7299199F475900779AC2 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E7298199F475900779AC2 /* play@2x.png */; };
 		2B5E729B199F479500779AC2 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E729A199F479500779AC2 /* play.png */; };
 		2B5E729D199F4C2B00779AC2 /* bubble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E729C199F4C2B00779AC2 /* bubble.mp3 */; };
+		7E7E85741BC8931B00410DCD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7E85731BC8931B00410DCD /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		7E7E85761BC8934000410DCD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7E85751BC8934000410DCD /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		2B5E7298199F475900779AC2 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
 		2B5E729A199F479500779AC2 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		2B5E729C199F4C2B00779AC2 /* bubble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubble.mp3; sourceTree = "<group>"; };
+		7E7E85731BC8931B00410DCD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7E7E85751BC8934000410DCD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				2B5E727F199F474100779AC2 /* Main.storyboard */,
 				2B5E7282199F474100779AC2 /* Images.xcassets */,
 				2B5E7279199F474100779AC2 /* Supporting Files */,
+				7E7E85751BC8934000410DCD /* Launch Screen.storyboard */,
 			);
 			path = "spring-button-demo";
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 		2B5E7279199F474100779AC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E7E85731BC8931B00410DCD /* Default-568h@2x.png */,
 				2B5E727A199F474100779AC2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -204,6 +210,8 @@
 				2B5E729D199F4C2B00779AC2 /* bubble.mp3 in Resources */,
 				2B5E7283199F474100779AC2 /* Images.xcassets in Resources */,
 				2B5E7299199F475900779AC2 /* play@2x.png in Resources */,
+				7E7E85741BC8931B00410DCD /* Default-568h@2x.png in Resources */,
+				7E7E85761BC8934000410DCD /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
