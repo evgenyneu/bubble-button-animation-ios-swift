@@ -4,16 +4,17 @@ This demo app shows how to apply spring style animation to a button.
 
 Animation is done by setting `Scale` transform to the button inside animation block. This demo app allows to tweak `duration`, `damping` and `velocity` parameters of the animation function.
 
-    button.transform = CGAffineTransformMakeScale(0.1, 0.1)
+    button.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
 
-    UIView.animateWithDuration(2.0,
+    UIView.animate(withDuration: 2.0,
       delay: 0,
-      usingSpringWithDamping: 0.20,
-      initialSpringVelocity: 6.00,
-      options: UIViewAnimationOptions.AllowUserInteraction,
-      animations: {
-        self.button.transform = CGAffineTransformIdentity
-      }, completion: nil)
+      usingSpringWithDamping: 0.2,
+      initialSpringVelocity: 6.0,
+      options: .allowUserInteraction,
+      animations: { [weak self] in
+        self?.button.transform = .identity
+      },
+    completion: nil)
 
 <img src='https://raw.githubusercontent.com/evgenyneu/bubble-button-animation-ios-swift/master/images/animation.gif' width='144' alt='Button animation iOS'>
 
