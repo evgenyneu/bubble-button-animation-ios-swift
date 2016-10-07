@@ -50,15 +50,15 @@ class ViewController: UIViewController {
   // ⬇︎⬇︎⬇︎ animation happens here ⬇︎⬇︎⬇︎
   func animateButton() {
     AudioServicesPlaySystemSound(bubbleSound)
-    button.transform = CGAffineTransformMakeScale(0.1, 0.1)
+    button.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
 
-    UIView.animateWithDuration(durationStepper.value,
+    UIView.animate(withDuration: durationStepper.value,
       delay: 0,
       usingSpringWithDamping: CGFloat(dampingStepper.value),
       initialSpringVelocity: CGFloat(velocityStepper.value),
-      options: UIViewAnimationOptions.AllowUserInteraction,
+      options: .allowUserInteraction,
       animations: {
-        self.button.transform = CGAffineTransformIdentity
+        self.button.transform = .identity
       },
       completion: { finished in
         self.animateButton()
@@ -68,24 +68,24 @@ class ViewController: UIViewController {
 
   func createBubbleSound() -> SystemSoundID {
     var soundID: SystemSoundID = 0
-    let soundURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), "bubble", "mp3", nil)
-    AudioServicesCreateSystemSoundID(soundURL, &soundID)
+    let soundURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), "bubble" as CFString!, "mp3" as CFString!, nil)
+    AudioServicesCreateSystemSoundID(soundURL!, &soundID)
     return soundID
   }
 
-  @IBAction func onVelocityChanged(sender: UIStepper) {
+  @IBAction func onVelocityChanged(_ sender: UIStepper) {
     velocityLabel.text =  formatValue(sender.value)
   }
 
-  @IBAction func onDampingChanged(sender: UIStepper) {
+  @IBAction func onDampingChanged(_ sender: UIStepper) {
     dampingLabel.text =  formatValue(sender.value)
   }
   
-  @IBAction func onDurationChanged(sender: UIStepper) {
+  @IBAction func onDurationChanged(_ sender: UIStepper) {
     durationLabel.text =  formatValue(sender.value)
   }
 
-  func formatValue(value: Double) -> String {
+  func formatValue(_ value: Double) -> String {
     return String(format: "%.2f", value)
   }
 }
