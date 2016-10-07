@@ -14,7 +14,7 @@ Animation is done by setting `Scale` transform to the button inside animation bl
       animations: { [weak self] in
         self?.button.transform = .identity
       },
-    completion: nil)
+      completion: nil)
 
 <img src='https://raw.githubusercontent.com/evgenyneu/bubble-button-animation-ios-swift/master/images/animation.gif' width='144' alt='Button animation iOS'>
 
